@@ -187,6 +187,13 @@ basic.forever(function () {
     while (text_list[stage] == "R") {
         Right()
         if (stage == 10) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            255,
+            SuperBit.enMotors.M1,
+            255
+            )
+            basic.pause(300)
             while (true) {
                 SuperBit.MotorRunDual(
                 SuperBit.enMotors.M1,
