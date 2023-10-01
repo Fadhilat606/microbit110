@@ -3,7 +3,7 @@ function Left () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         0
         )
         basic.pause(600)
@@ -12,14 +12,14 @@ function Left () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -150,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         0
         )
     } else if (I3 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
     } else if (I4 == 0) {
@@ -33,14 +33,14 @@ function Left () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
     } else {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         255
         )
     }
@@ -50,7 +50,7 @@ function Right () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
         basic.pause(600)
@@ -59,14 +59,14 @@ function Right () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -150
         )
     } else if (I3 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
     } else if (I2 == 0) {
@@ -80,14 +80,14 @@ function Right () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         0
         )
     } else {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         255
         )
     }
@@ -97,7 +97,7 @@ function Straight () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
         basic.pause(600)
@@ -107,42 +107,42 @@ function Straight () {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         0
         )
     } else if (I2 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -150,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         0
         )
     } else if (I3 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
     } else if (I4 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -150
         )
     } else if (I5 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         -255
         )
     } else {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         255,
-        SuperBit.enMotors.M1,
+        SuperBit.enMotors.M3,
         255
         )
     }
@@ -190,7 +190,7 @@ basic.forever(function () {
             SuperBit.MotorRunDual(
             SuperBit.enMotors.M1,
             255,
-            SuperBit.enMotors.M1,
+            SuperBit.enMotors.M3,
             255
             )
             basic.pause(300)
@@ -198,7 +198,7 @@ basic.forever(function () {
                 SuperBit.MotorRunDual(
                 SuperBit.enMotors.M1,
                 0,
-                SuperBit.enMotors.M1,
+                SuperBit.enMotors.M3,
                 0
                 )
             }
