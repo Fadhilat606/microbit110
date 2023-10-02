@@ -15,19 +15,19 @@ function Left () {
         SuperBit.enMotors.M3,
         0
         )
-    } else if (I3 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
     } else if (I4 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         0,
         SuperBit.enMotors.M1,
         -150
+        )
+    } else if (I3 == 0) {
+        SuperBit.MotorRunDual(
+        SuperBit.enMotors.M1,
+        -255,
+        SuperBit.enMotors.M3,
+        -255
         )
     } else if (I5 == 0) {
         SuperBit.MotorRunDual(
@@ -62,19 +62,19 @@ function Right () {
         SuperBit.enMotors.M3,
         -150
         )
-    } else if (I3 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
     } else if (I2 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -150,
         SuperBit.enMotors.M1,
         0
+        )
+    } else if (I3 == 0) {
+        SuperBit.MotorRunDual(
+        SuperBit.enMotors.M1,
+        -255,
+        SuperBit.enMotors.M3,
+        -255
         )
     } else if (I1 == 0) {
         SuperBit.MotorRunDual(
@@ -103,19 +103,19 @@ function Straight () {
         basic.pause(600)
         stage = stage + 1
     }
-    if (I1 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        0
-        )
-    } else if (I2 == 0) {
+    if (I2 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
         -150,
         SuperBit.enMotors.M3,
         0
+        )
+    } else if (I4 == 0) {
+        SuperBit.MotorRunDual(
+        SuperBit.enMotors.M1,
+        0,
+        SuperBit.enMotors.M3,
+        -150
         )
     } else if (I3 == 0) {
         SuperBit.MotorRunDual(
@@ -124,12 +124,12 @@ function Straight () {
         SuperBit.enMotors.M3,
         -255
         )
-    } else if (I4 == 0) {
+    } else if (I1 == 0) {
         SuperBit.MotorRunDual(
         SuperBit.enMotors.M1,
-        0,
+        -255,
         SuperBit.enMotors.M3,
-        -150
+        0
         )
     } else if (I5 == 0) {
         SuperBit.MotorRunDual(
@@ -148,8 +148,8 @@ function Straight () {
     }
 }
 let I5 = 0
-let I4 = 0
 let I3 = 0
+let I4 = 0
 let I2 = 0
 let I1 = 0
 let stage = 0
