@@ -176,7 +176,8 @@ let stage_list = [
 "S",
 "L",
 "L",
-"R"
+"R",
+"F"
 ]
 stage_index = 0
 basic.forever(function () {
@@ -185,6 +186,7 @@ basic.forever(function () {
     I3 = pins.digitalReadPin(DigitalPin.P3)
     I4 = pins.digitalReadPin(DigitalPin.P4)
     I5 = pins.digitalReadPin(DigitalPin.P5)
+    basic.showString("" + (stage_list[stage_index]))
 })
 basic.forever(function () {
     if (stage_list[stage_index] == "L") {
