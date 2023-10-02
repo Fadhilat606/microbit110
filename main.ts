@@ -1,150 +1,159 @@
 function Left () {
-    if (I1 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        0
-        )
-        basic.pause(600)
-        stage = stage + 1
-    } else if (I2 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -150,
-        SuperBit.enMotors.M3,
-        0
-        )
-    } else if (I4 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M1,
-        -150
-        )
-    } else if (I3 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
-    } else if (I5 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M3,
-        -255
-        )
-    } else {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        255,
-        SuperBit.enMotors.M3,
-        255
-        )
+    while (true) {
+        if (I1 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            0
+            )
+            stage_index = stage_index + 1
+            basic.pause(600)
+            return 0
+        } else if (I2 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -150,
+            SuperBit.enMotors.M3,
+            0
+            )
+        } else if (I4 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M1,
+            -150
+            )
+        } else if (I3 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            -255
+            )
+        } else if (I5 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M3,
+            -255
+            )
+        } else {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            255,
+            SuperBit.enMotors.M3,
+            255
+            )
+        }
     }
 }
 function Right () {
-    if (I5 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M3,
-        -255
-        )
-        basic.pause(600)
-        stage = stage + 1
-    } else if (I4 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M3,
-        -150
-        )
-    } else if (I2 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -150,
-        SuperBit.enMotors.M1,
-        0
-        )
-    } else if (I3 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
-    } else if (I1 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        0
-        )
-    } else {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        255,
-        SuperBit.enMotors.M3,
-        255
-        )
+    while (true) {
+        if (I5 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M3,
+            -255
+            )
+            stage_index = stage_index + 1
+            basic.pause(600)
+            return 0
+        } else if (I4 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M3,
+            -150
+            )
+        } else if (I2 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -150,
+            SuperBit.enMotors.M1,
+            0
+            )
+        } else if (I3 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            -255
+            )
+        } else if (I1 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            0
+            )
+        } else {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            255,
+            SuperBit.enMotors.M3,
+            255
+            )
+        }
     }
 }
 function Straight () {
-    if (I1 == 0 && I5 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
-        basic.pause(600)
-        stage = stage + 1
-    }
-    if (I2 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -150,
-        SuperBit.enMotors.M3,
-        0
-        )
-    } else if (I4 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M3,
-        -150
-        )
-    } else if (I3 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        -255
-        )
-    } else if (I1 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        -255,
-        SuperBit.enMotors.M3,
-        0
-        )
-    } else if (I5 == 0) {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        0,
-        SuperBit.enMotors.M3,
-        -255
-        )
-    } else {
-        SuperBit.MotorRunDual(
-        SuperBit.enMotors.M1,
-        255,
-        SuperBit.enMotors.M3,
-        255
-        )
+    while (true) {
+        if (I1 == 0 && I5 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            -255
+            )
+            stage_index = stage_index + 1
+            basic.pause(600)
+            return 0
+        }
+        if (I2 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -150,
+            SuperBit.enMotors.M3,
+            0
+            )
+        } else if (I4 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M3,
+            -150
+            )
+        } else if (I3 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            -255
+            )
+        } else if (I1 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            -255,
+            SuperBit.enMotors.M3,
+            0
+            )
+        } else if (I5 == 0) {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            0,
+            SuperBit.enMotors.M3,
+            -255
+            )
+        } else {
+            SuperBit.MotorRunDual(
+            SuperBit.enMotors.M1,
+            255,
+            SuperBit.enMotors.M3,
+            255
+            )
+        }
     }
 }
 let I5 = 0
@@ -152,9 +161,9 @@ let I3 = 0
 let I4 = 0
 let I2 = 0
 let I1 = 0
-let stage = 0
+let stage_index = 0
 led.enable(false)
-let text_list = [
+let stage_list = [
 "L",
 "R",
 "R",
@@ -169,7 +178,7 @@ let text_list = [
 "L",
 "R"
 ]
-stage = 0
+stage_index = 0
 basic.forever(function () {
     I1 = pins.digitalReadPin(DigitalPin.P1)
     I2 = pins.digitalReadPin(DigitalPin.P2)
@@ -178,15 +187,11 @@ basic.forever(function () {
     I5 = pins.digitalReadPin(DigitalPin.P5)
 })
 basic.forever(function () {
-    while (text_list[stage] == "L") {
+    if (stage_list[stage_index] == "L") {
         Left()
-        if (text_list[stage] != "L") {
-            break;
-        }
-    }
-    while (text_list[stage] == "R") {
+    } else if (stage_list[stage_index] == "R") {
         Right()
-        if (stage == 13) {
+        if (stage_index == 13) {
             SuperBit.MotorRunDual(
             SuperBit.enMotors.M1,
             255,
@@ -203,14 +208,7 @@ basic.forever(function () {
                 )
             }
         }
-        if (text_list[stage] != "R") {
-            break;
-        }
-    }
-    while (text_list[stage] == "S") {
-        Left()
-        if (text_list[stage] != "S") {
-            break;
-        }
+    } else if (stage_list[stage_index] == "S") {
+        Straight()
     }
 })
